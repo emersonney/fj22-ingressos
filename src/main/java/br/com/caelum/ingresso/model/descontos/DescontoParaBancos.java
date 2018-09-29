@@ -4,6 +4,12 @@ import java.math.BigDecimal;
 
 public class DescontoParaBancos implements Desconto {
 
+	
+	@Override
+	public String getDescricao(){
+		return "Desconto Banco";
+	}
+	
 	@Override
 	public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal){
 		return precoOriginal.subtract(trintaPorCentoSobre(precoOriginal));
