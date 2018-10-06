@@ -27,9 +27,11 @@
 		<property name="converters">
 			<set merge="true">
 				<bean class="br.com.caelum.ingresso.converter.YearMonthConverter"/>
+				<bean class="br.com.caelum.ingresso.converter.LocalTimeConverter"/>
 			</set>
 		</property>
 	</bean>
+	
 
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />
