@@ -8,8 +8,4 @@ cache:
   - "$HOME/.m2/"
 scripts:
 - mvn clean package
-- mvn sonar:sonar \
-  -Dsonar.projectKey=emersonney_fj22-ingressos \
-  -Dsonar.organization=emersonney-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=b96fe9e05ffe88857b05865ea3e6aa76f6d724f1
+- mvn sonar:sonar -Dsonar.projectKey=emersonney_fj22-ingressos -Dsonar.organization=emersonney-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=b96fe9e05ffe88857b05865ea3e6aa76f6d724f1
